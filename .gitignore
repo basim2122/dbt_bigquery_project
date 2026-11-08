@@ -1,10 +1,21 @@
-# dbt-specific files
+# dbt generated files
 logs/
 target/
 dbt_packages/
+dbt.log
 
-# BigQuery credentials
-*.json  # Excludes all JSON files (use carefully)
-.env     # Excludes environment variables file
-profiles.yml  # Excludes dbt profiles (contains credentials)
+# Python virtual environments
+venv/
+.venv/
+dbt-env/
 
+# Credentials
+.env
+profiles.yml
+**/profiles.yml
+*service-account*.json
+*credentials*.json
+
+# Python cache
+__pycache__/
+*.pyc
