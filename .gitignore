@@ -9,7 +9,7 @@ venv/
 .venv/
 dbt-env/
 
-# Credentials
+# Credentials and environment variables
 .env
 profiles.yml
 **/profiles.yml
